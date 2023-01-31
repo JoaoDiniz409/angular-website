@@ -1,0 +1,44 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5">Pagina de resturante <br> Website Em Angular</h1>
+        <a routerLink="menu">Fazer Pedido <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+
+<div class="container mt-5 mb-4">
+    <h1 class="text-center">Como Obter Uma Comida Fresca</h1>
+    <div class="row">
+        <div class="col-lg-4 mt-2">
+            <div class="Box">
+                <h1>1</h1>
+                <p>Selecione Tipo</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="Box">
+                <h1>2</h1>
+                <p>Preenche os detalhes</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="Box">
+                <h1>3</h1>
+                <p>Entrega do pedido em minutos</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Recomendações Do Chefe</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
+            <div class="foodbox" *ngIf="i<=3">
+                <img src="{{fd.foodImg}}"/>
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodPrice | currency:'BRL'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="maisopcoes"> + Opções <i class="bi bi-arrow-right"></i></a>
+</div>

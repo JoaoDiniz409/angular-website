@@ -1,0 +1,15 @@
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Menu</h1>
+    <a routerLink="" class="btn btn-sm btn-warning mb-5"> Voltar </a>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let fd of foodData">
+            <div class="foodbox">
+                <img src="{{fd.foodImg}}"/>
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodDetails}}</p>
+                <p>{{fd.foodPrice | currency:'BRL'}}</p>
+                <a class="btn_pedido" [routerLink]="['/menu',fd.id]">Fazer Pedido <i class="bi bi-bag-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

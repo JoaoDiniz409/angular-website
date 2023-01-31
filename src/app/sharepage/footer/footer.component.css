@@ -1,0 +1,28 @@
+.footer {
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+    background-color: rgb(66, 60, 60);
+    padding: 20px 10px;
+}
+
+h1 {
+    font-weight: bold;
+    color: bisque;
+    font-size: 20px;
+}
+
+a {
+    color: bisque;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+
+a:hover {
+    color: yellow;
+}
+
+i {
+    padding: 0px 10px;
+}
